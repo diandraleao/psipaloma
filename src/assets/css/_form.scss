@@ -1,0 +1,17 @@
+.button {
+	background-color: $azul;
+	color: $branco;
+	border: none;
+	border-radius: 60px;
+	padding: 8px 15px;
+	font-size: $font-sm;
+	font-family: 'Raleway', sans-serif;
+}
+
+.input {
+	border: none;
+	border-radius: 60px;
+	background-color: $branco;
+	color: $cinza-escuro;
+	padding: 8px 19px;
+}

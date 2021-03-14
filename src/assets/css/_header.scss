@@ -67,6 +67,7 @@ header {
 		.social {
 			display: flex;
 			justify-content: center;
+			margin-top: 20vh;
 			&-item {
 				&:not(:last-of-type) {
 					margin-right: 16px;

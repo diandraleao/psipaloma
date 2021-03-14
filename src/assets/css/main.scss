@@ -1,0 +1,32 @@
+@import 'reset',
+		'_config',
+		'_header',
+		'_button';
+
+body {
+	background-color: $branco; 
+}
+
+main {
+	@media screen and (min-width: 760px) {
+		padding-top: 100px;
+		/*
+		display: flex;
+		justify-content: space-between;
+		align-content: stretch;
+		height: calc(100% - 67px);
+		*/
+		/* altura do header */
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 30px;
+
+		@media screen and (min-width: 760px) {
+			display: flex;
+			justify-content: center;
+		}
+
+	}
+}

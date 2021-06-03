@@ -6,6 +6,7 @@
 	padding: 8px 15px;
 	font-size: $font-sm;
 	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
 }
 
 .input {
@@ -13,5 +14,15 @@
 	border-radius: 60px;
 	background-color: $branco;
 	color: $cinza-escuro;
-	padding: 8px 19px;
+	padding: 8px 16px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: $space-stack-sm;
+}
+
+.label {
+	color: $branco;
+	display: block;
+	text-align: left;
 }

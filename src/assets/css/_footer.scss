@@ -1,0 +1,29 @@
+.footer {
+    padding-top: $space-stack-md;
+    padding-bottom: $space-stack-md;
+	border-top: 1px solid #E8E8E8;
+
+    &__logo {
+        margin-bottom: $space-stack-md;
+
+        &__img {
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+
+    &__social {
+        text-align: center;
+
+        &__title {
+            margin-bottom: $space-stack-sm;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

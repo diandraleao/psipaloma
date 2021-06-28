@@ -1,7 +1,10 @@
+@import "../../../node_modules/tiny-slider/dist/tiny-slider.css";
+
 @import 'reset',
 		'_config',
 		'_header',
-		'_form';
+		'_form',
+		'_footer';
 
 body {
 	background-color: $branco;
@@ -20,16 +23,17 @@ main {
 		/* altura do header */
 	}
 
-	.container {
-		width: 100%;
-		padding: 0 30px;
+}
 
-		@media screen and (min-width: 760px) {
-			display: flex;
-			justify-content: center;
-		}
+.container {
+	width: 100%;
+	padding: 0 30px;
 
+	@media screen and (min-width: 760px) {
+		display: flex;
+		justify-content: center;
 	}
+
 }
 
 section {
@@ -119,8 +123,79 @@ section {
 
 	&__info {
 		&__box {
+			margin-bottom: $space-stack-sm;
 
+			&__img {
+				margin-bottom: $space-stack-xs;
+			}
+
+			&__text {
+				width: 70%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 
+	}
+}
+
+.instagram {
+	&__link {
+		color: $azul;
+		text-decoration: none;
+	}
+
+	.tns-outer {
+		width: 90%;
+		margin: 0 auto;
+
+		.tns-controls {
+			position: relative;
+			height: 25px;
+
+			button {
+				position: absolute;
+				border: none;
+				background: transparent;
+				background: url('../img/arrow-slider.svg') no-repeat center;
+				font-size: 0;
+				width: 14px;
+				height: 24px;
+
+				&[data-controls="prev"] {
+					left: -30px;
+					top: 150px;
+					transform: rotate(180deg);
+				}
+				&[data-controls="next"] {
+					right: -30px;
+					top: 150px;
+				}
+			}
+		}
+
+		.tns-nav {
+			button {
+				width: 9px;
+				height: 9px;
+				padding: 0;
+				margin: 0 5px;
+				border-radius: 50%;
+				background: #ccc;
+				border: 0;
+				&.tns-nav-active {
+					background: #999;
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	background-image: url('../img/bg-contato-mb.jpg');
+
+	.main__title,
+	.description {
+		color: $branco;
 	}
 }
